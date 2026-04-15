@@ -42,7 +42,7 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button asChild className="btn-cta">
+          <Button asChild nativeButton={false} className="btn-cta">
             <Link to="/catalog">Sewa Sekarang</Link>
           </Button>
         </div>
@@ -71,7 +71,7 @@ export default function Navbar() {
                     {link.name}
                   </Link>
                 ))}
-                <Button asChild className="gradient-pastel w-full rounded-full mt-4">
+                <Button asChild nativeButton={false} className="gradient-pastel w-full rounded-full mt-4">
                   <Link to="/catalog" onClick={() => setIsOpen(false)}>
                     Sewa Sekarang
                   </Link>

@@ -34,7 +34,7 @@ Tanggal Sewa: ${formData.date}
 Durasi: ${formData.duration} Hari
 Alamat: ${formData.address}`;
 
-    const waLink = `wa.me/6289660123406`;
+    const waLink = `https://wa.me/6289660123406?text=${encodeURIComponent(message)}`;
     window.open(waLink, "_blank");
   };
 

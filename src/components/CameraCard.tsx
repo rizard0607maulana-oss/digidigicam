@@ -40,10 +40,10 @@ export default function CameraCard({ camera }: CameraCardProps) {
           </p>
         </CardContent>
         <CardFooter className="px-6 pb-6 pt-4 flex gap-3">
-          <Button asChild variant="outline" className="flex-1 border-pastel-blue/20 text-pastel-blue hover:bg-pastel-blue hover:text-white rounded-full h-10 text-xs font-bold">
+          <Button asChild nativeButton={false} variant="outline" className="flex-1 border-pastel-blue/20 text-pastel-blue hover:bg-pastel-blue hover:text-white rounded-full h-10 text-xs font-bold">
             <Link to={`/detail/${camera.id}`}>Detail</Link>
           </Button>
-          <Button asChild className="flex-1 gradient-pastel hover:opacity-90 rounded-full h-10 text-xs font-bold shadow-md">
+          <Button asChild nativeButton={false} className="flex-1 gradient-pastel hover:opacity-90 rounded-full h-10 text-xs font-bold shadow-md">
             <Link to={`/booking?cam=${camera.id}`}>Book Now</Link>
           </Button>
         </CardFooter>

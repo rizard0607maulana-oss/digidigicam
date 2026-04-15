@@ -30,12 +30,12 @@ export default function Home() {
               Abadikan momen Gen Z kamu dengan vibe Y2K yang otentik. Tersedia koleksi kamera digital vintage terlengkap di Purwokerto. ✨
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="btn-cta px-10 py-7 text-lg">
+              <Button asChild nativeButton={false} size="lg" className="btn-cta px-10 py-7 text-lg">
                 <Link to="/catalog">
                   Lihat Katalog
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="btn-outline-pink px-10 py-7 text-lg">
+              <Button asChild nativeButton={false} size="lg" variant="outline" className="btn-outline-pink px-10 py-7 text-lg">
                 <Link to="/about">Cara Booking</Link>
               </Button>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl mb-4 tracking-tighter">Kamera Terpopuler</h2>
               <p className="text-lg opacity-70">Pilihan favorit DigiFriends di Purwokerto.</p>
             </div>
-            <Button asChild variant="ghost" className="text-pastel-blue hover:text-pastel-pink font-bold group">
+            <Button asChild nativeButton={false} variant="ghost" className="text-pastel-blue hover:text-pastel-pink font-bold group">
               <Link to="/catalog" className="flex items-center gap-2">
                 Lihat Semua <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
@@ -181,7 +181,7 @@ export default function Home() {
               <p className="text-xl mb-12 opacity-90 max-w-2xl mx-auto leading-relaxed">
                 Booking sekarang sebelum kehabisan! Stok terbatas untuk setiap model kamera.
               </p>
-              <Button asChild size="lg" className="bg-white text-pastel-blue hover:bg-white/90 rounded-full px-12 py-8 text-xl font-bold shadow-xl transition-all hover:scale-105">
+              <Button asChild nativeButton={false} size="lg" className="bg-white text-pastel-blue hover:bg-white/90 rounded-full px-12 py-8 text-xl font-bold shadow-xl transition-all hover:scale-105">
                 <Link to="/catalog">Pilih Kamera Sekarang</Link>
               </Button>
             </motion.div>

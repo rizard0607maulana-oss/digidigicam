@@ -24,7 +24,7 @@ export default function Detail() {
   return (
     <div className="pt-32 pb-24">
       <div className="container mx-auto px-4">
-        <Button asChild variant="ghost" className="mb-8 text-pastel-blue hover:text-pastel-pink">
+        <Button asChild nativeButton={false} variant="ghost" className="mb-8 text-pastel-blue hover:text-pastel-pink">
           <Link to="/catalog">
             <ArrowLeft className="mr-2" size={20} /> Kembali ke Katalog
           </Link>
@@ -85,12 +85,12 @@ export default function Detail() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-auto">
-              <Button asChild size="lg" className="flex-1 btn-cta py-8 text-lg">
+              <Button asChild nativeButton={false} size="lg" className="flex-1 btn-cta py-8 text-lg">
                 <a href={waLink} target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="mr-2" size={24} /> Book via WhatsApp
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="flex-1 btn-outline-pink py-8 text-lg">
+              <Button asChild nativeButton={false} size="lg" variant="outline" className="flex-1 btn-outline-pink py-8 text-lg">
                 <Link to={`/booking?cam=${camera.id}`}>
                   <ShoppingBag className="mr-2" size={24} /> Form Booking
                 </Link>
